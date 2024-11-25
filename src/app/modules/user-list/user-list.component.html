@@ -1,0 +1,9 @@
+@if (userList && userList.length > 0) {
+  <ul>
+    @for(user of userList; track $index) {
+      <li [appHighlight]="$index">{{user.name}}</li>
+    }
+  </ul>
+}
+
+<app-counter></app-counter>
